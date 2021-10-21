@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: dist/my-angular-project
+  - source: ./**/*
     destination: /var/www/my-angular-project
 permissions:
   - object: /var/www/my-angular-project
@@ -14,7 +14,7 @@ permissions:
       - directory
 hooks:
   ApplicationStart:
-    - location: deploy-scripts/application-start-hook.sh
+    - location: ./application-start-hook.sh
       timeout: 300
     # ValidateService:
   #   - location: deploy-scripts/simulate-failure.sh    
