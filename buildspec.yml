@@ -10,6 +10,5 @@ phases:
       - dotnet publish -c release -o ./build_output WebApplicationSample/WebApplicationSample.csproj
 artifacts:
   files:
-    - 'dist/my-angular-project/**/*'
-    - appspec.yml
-    - 'deploy-scripts/**/*'
+    - ./**/*
+  base-directory: './build_output'
