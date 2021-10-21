@@ -12,4 +12,5 @@ artifacts:
   files:
     - ./**/*
     - appspec.yml
-  base-directory: './build_output'
+    - application-start-hook.sh
+    base-directory: './build_output'
