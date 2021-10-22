@@ -11,4 +11,6 @@ phases:
 artifacts:
   files:
     - ./**/*
+    - appspec.yml
+    - 'deploy-scripts/**/*'
   base-directory: './build_output'
